@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>小米商城 </title>
+	<meta name="description" content="零食,百货,应有尽有" />
+	<meta name="keywords" content="零食，生活用品，百货" />
+	<!--处理样式-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!--公共的CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--首页的CSS-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<!--引入网页标题图标-->
+	<link rel="shortcut icon" type="image/x-icon" href="img//favicon.ico">
+	<script src="./jquery1.12.4.min.js"></script>
+	<script src="./js/index.js"></script>
+</head>
+
+<body>
+	<div class="page-top">
+		<div class="container">
+			<div class="top-lt">
+				<a href="">小米商城</a>
+				<span>|</span>
+				<a href="">MIUI</a>
+				<span>|</span>
+				<a href="">IoT</a>
+				<span>|</span>
+				<a href="">云服务</a>
+				<span>|</span>
+				<a href="">金融</a>
+				<span>|</span>
+				<a href="">有品</a>
+				<span>|</span>
+				<a href="">小爱开放平台</a>
+				<span>|</span>
+				<a href="">企业团购</a>
+				<span>|</span>
+				<a href="">资质证照</a>
+				<span>|</span>
+				<a href="">协议规则</a>
+				<span>|</span>
+				<a href="" class="download">下载app
+					<div class="down-box">
+						<img src="img/download.png" alt="小米商城">
+						小米商城APP
+					</div>
+				</a>
+				<span>|</span>
+				<a href="">Select Location</a>
+			</div>
+			<div class="top-gt">
+				<div class="car-box">
+					<a href="./cart.html" class="tit">购物车</a>
+					<div class="pop">
+						<!--	<p class="no-good">购物车还没有商品，赶紧选购吧！</p>  -->
+						<ul class="list">
+							<li>
+								<h2 class="iddd" style="display: none;">11111111</h2>
+								<a href="" class="pic"><img src="img/mi10.png"></a>
+								<div class="txt">小米10，全网通版</div>
+								<div class="num">
+
+									<h4>3299元 X 1</h4>
+
+								</div>
+							</li>
+
+
+						</ul>
+						<div class="total">
+							<div class="price">
+								<p>共1件商品</p>
+								<h3>2999元</h3>
+							</div>
+							<button class="btn btnadd">加入购物车</button>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="login">
+					<a href="login.html">登录</a>
+					<span>|</span>
+					<a href="register.html">注册</a>
+					<span>|</span>
+					<a href="">消息通知</a>
+				</div>
+				<!--<div class="userinfo">
+			<a href="" class="link">消息通知</a>
+			<a href="" class="link">我的订单</a>
+			<div class="user">
+				<a href="" class="tit">用户~~</a>
+				<ul>
+				<li><a href="">个人中心</a></li>
+				<li><a href="">评价晒单</a></li>
+				<li><a href="">我的喜欢</a></li>
+				<li><a href="">小米账号</a></li>
+				<li><a href="">退出登录</a></li>
+				</ul>
+			</div>
+-->
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--导航-->
+	<div class="page-nav">
+		<div class="container">
+			<a href="" class="logo"></a>
+			<ul class="nav">
+				<li class="nav-item" id="page-all-nav">
+					<a href="" id="allcat" style="font-size:16px;">全部商品分类</a>
+					<!-- 全部分类下拉菜单-->
+					<div class="slider-nav">
+						<ul class="slider-ul">
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>手机</span>
+									<span>电话卡</span>
+									<span class="You">></span>
+								</a>
+								<div class="slider-pop">
+									<a href="" class="pop-li">
+										<img src="img/mi10.png">
+										<p>小米10</p>
+									</a>
+									<a href="" class="pop-li">
+										<img src="img/mi10.png">
+										<p>小米10</p>
+									</a>
+									<a href="" class="pop-li">
+										<img src="img/mi10.png">
+										<p>小米10</p>
+									</a>
+									<a href="" class="pop-li">
+										<img src="img/mi10.png">
+										<p>小米10</p>
+									</a>
+									<a href="" class="pop-li">
+										<img src="img/mi10.png">
+										<p>小米10</p>
+									</a>
+									<a href="" class="pop-li">
+										<img src="img/mi10.png">
+										<p>小米10</p>
+									</a>
+									<a href="" class="pop-li">
+										<img src="img/mi10.png">
+										<p>小米10</p>
+									</a>
+								</div>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>电视</span>
+									<span>盒子</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>笔记本</span>
+									<span>显示器</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>家电</span>
+									<span>插线板</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>出门</span>
+									<span>穿戴</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>智能</span>
+									<span>路由器</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>电源</span>
+									<span>配件</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>健康</span>
+									<span>儿童</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>耳机</span>
+									<span>音箱</span>
+									<span class="You">></span>
+								</a>
+							</li>
+							<li class="slider-li">
+								<a href="" class="name">
+									<span>生活</span>
+									<span>箱包</span>
+									<span class="You">></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">小米手机</a>
+					<div class="pop">
+						<ul class="down-ul container">
+							<li class="down-li">
+								<span class="tags">新品</span>
+								<a href="" class="pic">
+									<img src="img/mi10.png">
+								</a>
+								<h3 class="name">小米10</h3>
+								<p class="price">2999元</p>
+								<i></i>
+							</li>
+
+							<li class="down-li">
+
+								<span class="tags">新品</span>
+								<img src="img/mi10.png">
+								</a>
+								<h3 class="name">小米10</h3>
+								<p class="price">2999元</p>
+								<i></i>
+							</li>
+							<li class="down-li">
+								<span class="tags">新品</span>
+								<a href="" class="pic">
+									<img src="img/mi10.png">
+								</a>
+								<h3 class="name">小米10</h3>
+								<p class="price">2999元</p>
+								<i></i>
+							</li>
+							<li class="down-li">
+								<span class="tags">新品</span>
+								<a href="" class="pic">
+									<img src="img/mi10.png">
+								</a>
+								<h3 class="name">小米10</h3>
+								<p class="price">2999元</p>
+								<i></i>
+							</li>
+							<li class="down-li">
+								<span class="tags">新品</span>
+								<a href="" class="pic">
+									<img src="img/mi10.png">
+								</a>
+								<h3 class="name">小米10</h3>
+								<p class="price">2999元</p>
+								<i></i>
+							</li>
+							<li class="down-li last">
+								<span class="tags">新品</span>
+								<a href="" class="pic">
+									<img src="img/mi10.png">
+								</a>
+								<h3 class="name">小米10</h3>
+								<p class="price">2999元</p>
+								<i></i>
+							</li>
+
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">Redmi 红米</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">电视</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">笔记本</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">家电</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">路由器</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">智能硬件</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">服务</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="tit">社区</a>
+				</li>
+			</ul>
+			<!--搜索框-->
+			<div class="search">
+				<form action="" method="post">
+					<input type="text" name="" class="q">
+					<input type="submit" class="btn" name="" value="">
+					<div class="tags">
+						<span>小米</span>
+						<span>小米10青春版</span>
+					</div>
+
+					<ul class="hot">
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>红米K30 pro</span>
+							</a>
+						</li>
+
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--轮播导航S-->
+	<div class="swiper-container idx-banner container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="./img/banner1.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/banner2.PNG" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/banner3.PNG" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/banner4.PNG" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/banner5.PNG" alt="">
+			</div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+
+		<!-- 如果需要导航按钮 -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<!-- 如果需要滚动条 -->
+		<!-- <div class="swiper-scrollbar"></div> -->
+	</div>
+	<!-- 导航等组件可以放在container之外 -->
+
+	<!-- 1.首先加载插件，需要用到的文件有swiper.js和swiper.css文件 -->
+	<script src="./js/swiper.js"></script>
+	<script>
+		// 4.初始化Swiper
+		var mySwiper = new Swiper('.swiper-container', {
+			// direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+			autoplay: true,//可自动轮播
+
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			},
+
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			// 如果需要滚动条
+			// scrollbar: {
+			//     el: '.swiper-scrollbar',
+			// },
+		})        
+	</script>
+	<!--轮播导航S-->
+	<!-- 菜单广告位-->
+	<div class="idx-menu-adv  container">
+		<ul class="menu">
+			<li class="content"><a href=""><img src="img/menu1.png">选购手机</a></li>
+			<!--<li class="after"></li> <li class="before"></li>-->
+			<li class="content"><a href=""><img src="img/menu2.png">企业团购</a></li>
+			<!--<li class="after"></li> <li class="before"></li>-->
+			<li class="content"><a href=""><img src="img/menu3.png">F码通道</a></li>
+			<li class="content"><a href=""><img src="img/menu4.png">米粉卡</a></li>
+			<!--<li class="after">-->
+			<li class="content"><a href=""><img src="img/menu5.png">以旧换新</a></li>
+			<!--<li class="after">-->
+			<li class="content"><a href=""><img src="img/menu6.png">话费充值</a></li>
+		</ul>
+		<a href="" class="pic"><img src="img/adv1.png"></a>
+		<a href="" class="pic"><img src="img/adv2.png"></a>
+		<a href="" class="pic"><img src="img/adv3.png"></a>
+	</div>
+
+	<!--广告图 -->
+	<div class="idx-adv container">
+		<a href=""><img src="img/adv4.png"></a>
+	</div>
+
+	<!-- 大内容区-->
+	<div class="idx-container">
+		<div class="container">
+			<!-- 手机 -->
+			<div class="idx-title">
+				<h2 class="tit">手机</h2>
+				<a class="see-all" href="">查看全部</a>
+			</div>
+			<div class="idx-phone idx-box">
+				<div class="idx-leftadv">
+					<a href=""><img src="img/adv5.png"></a>
+				</div>
+				<div class="good-box col-5">
+					<div class="phoneli col-5">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+					<div class="phoneli">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+					<div class="phoneli">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+					<div class="phoneli">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+					<div class="phoneli col-5">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+					<div class="phoneli col-5">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+					<div class="phoneli col-5">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+					<div class="phoneli col-5">
+						<img src="img/phone1.png">
+						<h3>小米10 青春版 5G</h3>
+						<p>50倍潜望式变焦/轻薄5G手机</p>
+						<span>2099元起</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="home-flashsale xm-plain-box">
+		<div class="box-hd">
+			<h2 class="title">小米闪购</h2>
+		</div>
+		<div class="box-bd clearfix">
+			<div class="row">
+				<div class="flashsale-countdown rainbow-item-4 span4">
+					<div class="round">20:00 场</div><img src='data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAA1CAYAAAAklDnhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ%0AbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp%0Abj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6%0AeD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1%0AMTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo%0AdHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw%0AdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv%0AIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS%0AZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD%0AcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5j%0AZUlEPSJ4bXAuaWlkOjY4Q0ZFMkY5MTJFNzExRThCMkM4OEM1RTNBNjczQUVBIiB4bXBNTTpEb2N1%0AbWVudElEPSJ4bXAuZGlkOjY4Q0ZFMkZBMTJFNzExRThCMkM4OEM1RTNBNjczQUVBIj4gPHhtcE1N%0AOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjhDRkUyRjcxMkU3MTFFOEIy%0AQzg4QzVFM0E2NzNBRUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjhDRkUyRjgxMkU3MTFF%0AOEIyQzg4QzVFM0E2NzNBRUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94Onht%0AcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5oEyacAAACoklEQVR42sSYv0tbURTHX0LqD6T4g4pE%0AcHDoUOloBxVd/QFFEcQqWtrSKlKFmmAslopohzgIbv4FwUEE0clFujiIi+BSIbRQ0ooKRReRULHf%0AS48Qgu++c3/FAx+iyU3eJzf3nnPuC/1qavQ04zVY8szjCHRGNN9cBD6DSkOJKzAGzsOaH/AW1FuY%0AjRg4EH/oiJSCTxYk1sDK7T86Iu9BraHED/Au9wlVkYdg2lAiC/rBhYnIB/DIUOQj2M9/UkWkCsQN%0AJbbA8l0vqIhMgXIDiZ/gFbgxEakBEwYSf8Eg+OM3gCsyA8oMRETy25UN4IjUgVEDiW2wGDSIIzIL%0AijUljsFLv3WhIvKYFphOXNO6OOUMDhKZA7qFcQF85Q6WXeQpeKEpcULlvY8xthp8iwR8I93qLLb7%0AKnOsSPWNfhd6Bro99yHqTi9IhyWzEXIsIXbSG7Djt1jbQHsBZkMkyZRs13wpgIRoiJKy7dsBWh1L%0AbN5Vt3JFQrQ2XMYeGKBk5yvSI7aRQ4k0eA4uZZlVPM47lDgTZxd6lKb4AcqkLuKSZiIdVGsiVFNc%0AxDV9yT1Orekjoe+MDw4pHqwmaJewit66Ql0QaX+DOTaZe4DitAFZxQaaEynKnJ6KCDeaQAtj3A7V%0AkBtXIpwT3iFV06zqquaKPKEtKIsM6Mo/StoWiQeMvSCJjO4+54hEwTCjuTk0STgckUm6QxTY3LgU%0AKc+/jyFrblyKCIkKbnPjSkT8HDGV5saVyBAtVHZz40Ik7HNTRtrcuBARF2tQbW5ciCR0mhvbIs2E%0AcnNjWySh29zYFGnIK25KzY1Nkdziptzc2BKJUu7Qbm5sicQom2o3NzZEKqiu/DZpbmyIjIAHNBMZ%0A7x4iTALjhcgVQSIl3v87w5vePcY/AQYAFYR6skFSqBUAAAAASUVORK5CYII=' alt="小米闪购">
+					<div class="desc">距离结束还有</div>
+					<div class="countdown clearfix"><span class="h11"></span><i>:</i><span class="f11"></span><i>:</i><span class="m11"></span></div>
+				</div>
+				<div id="J_flashSaleList"
+					class="span16 flashsale-list swiper-container swiper-no-swiping swiper-container-initialized swiper-container-horizontal">
+					<ul class="swiper-wrapper"
+						style="transform: translate3d(0px, 0px, 0px); transition-duration: 2000ms;">
+						<li class="swiper-slide rainbow-item-1" style="width: 234px; margin-right: 14px;"><a
+								href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2194500052&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2194500052&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-9adaac73d2d761b1','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="RedmiBook 13 i5 8G 512G SSD MX250 2G 银" width="160"
+											height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/71c5e84be42a4581c67bd2fe5d4b8ffb.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1594113149.83176048.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">RedmiBook 13 i5 8G 512G SSD MX250 2G 银</h3>
+									<p class="desc">让高性能全面展现</p>
+									<p class="price"><span>3999</span>元
+										<del>4799元</del>
+									</p>
+									
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-2" style="width: 234px; margin-right: 14px;"><a
+								href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2194500031&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2194500031&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-f960e60aad4ad4cd','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="小米无线鼠标 Lite 黑色" width="160" height="160"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1573354088.49861079.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+									<p class="desc">简约设计，轻盈握感</p>
+									<p class="price"><span>29</span>元
+										<del>39元</del>
+									</p>
+									
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-3" style="width: 234px; margin-right: 14px;"><a
+								href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2174400013&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2174400013&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-7374c03e5456ec4a','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="米家空气净化器 2S" width="160" height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/b907a40651c096642415df6163524066.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1510020567.64467830.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">米家空气净化器 2S</h3>
+									<p class="desc">好空气看得见</p>
+									<p class="price"><span>699</span>元
+										<del>899元</del>
+									</p>
+								
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-4" style="width: 234px; margin-right: 14px;"><a
+								href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2202600024&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2202600024&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-0c295ae956333220','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="日常元素抽纸 青春版 24包/箱" width="160" height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/730055892c1afa7b6d8128c0938b5277.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1593330564.86892796.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">日常元素抽纸 青春版 24包/箱</h3>
+									<p class="desc">精选原生竹浆，健康环保</p>
+									<p class="price"><span>27.9</span>元
+										<del>32.9元</del>
+									</p>
+									
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-5" style="width: 234px; margin-right: 14px;"><a
+								href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2194100024&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2194100024&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-f713d43d3143f018','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="Pro 15增强版 i5" width="160" height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/563ced6ca5112591d4c19f7133e8847b.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1510020567.64467830.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">Pro 15增强版 i5</h3>
+									<p class="desc">再次突破强大</p>
+									<p class="price"><span>4999</span>元
+										<del>5899元</del>
+									</p>
+								
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-6 swiper-slide-prev"
+							style="width: 234px; margin-right: 14px;"><a href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2192300006&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2192300006&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-3c98cea386c042e0','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="米家滚筒洗烘一体机1A 8kg 白色" width="160" height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/4341891528452ee712596b4ed7347532.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1604138702.29133810.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">米家滚筒洗烘一体机1A 8kg 白色</h3>
+									<p class="desc">智能烘干，即洗即穿</p>
+									<p class="price"><span>1599</span>元
+										<del>1999元</del>
+									</p>
+								
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-7 swiper-slide-active"
+							style="width: 234px; margin-right: 14px;"><a href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2204400029&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2204400029&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-3380e7b65ffca982','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="HITH智能足浴器Q3 有线版 旋钮款 旋钮款" width="160" height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/53c97a38921965729cbcb65fca605ab0.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1510020567.64467830.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">HITH智能足浴器Q3 有线版 旋钮款 旋钮款</h3>
+									<p class="desc">D舒适按摩，精准恒温足浴</p>
+									<p class="price"><span>399</span>元
+										<del>569元</del>
+									</p>
+								
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-8 swiper-slide-next"
+							style="width: 234px; margin-right: 14px;"><a href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2194500051&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2194500051&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-5b17265fa418b2a8','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="RedmiBook 13 i7 8G 512G SSD MX250 2G 银" width="160"
+											height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/71c5e84be42a4581c67bd2fe5d4b8ffb.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1594113149.83176048.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">RedmiBook 13 i7 8G 512G SSD MX250 2G 银</h3>
+									<p class="desc">让高性能全面展现</p>
+									<p class="price"><span>4499</span>元
+										<del>5499元</del>
+									</p>
+									
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-9" style="width: 234px; margin-right: 14px;"><a
+								href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2203700004&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2203700004&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-33cb7cc51822b124','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="COSBEAUTY 电激光生发仪" width="160" height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/05539d0d63768c56c7488340bd7a6d7b.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1592217984.22074492.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">COSBEAUTY 电激光生发仪</h3>
+									<p class="desc">医用LLLT激光 12周健发新</p>
+									<p class="price"><span>1999</span>元
+										<del>2299元</del>
+									</p>
+									
+								</div>
+							</a></li>
+						<li class="swiper-slide rainbow-item-10" style="width: 234px; margin-right: 14px;"><a
+								href="//www.mi.com/buy/seckill" target="_blank"
+								data-log_code="31activity_homeseckill#goodsid=2203000050&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494"
+								data-settrack="true"
+								onclick="_msq.push(['trackEvent','31activity_homeseckill#goodsid=2203000050&amp;start_time=1609776000&amp;end_time=1609810920&amp;bid=3184494','//www.mi.com/buy/seckill','81190ccc4d52f577-32c0d9b3383fa3fe','&quot;&quot;']);"
+								stat_exposure="true">
+								<div class="content">
+									<div class="thumb"><img alt="Redmi G i5/16GB/512GB PCIe/GTX 1650Ti/144Hz"
+											width="160" height="160"
+											data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/dd7d4c781fb22a973179a86b9f3cd8b8.png?thumb=1&amp;w=200&amp;h=200&amp;f=webp&amp;q=90"
+											src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1559037612.05991980.jpg"
+											lazy="loaded"></div>
+									<h3 class="title">Redmi G i5/16GB/512GB PCIe/GTX 1650Ti/144Hz</h3>
+									<p class="desc">不满足一种突破，也不安于被视野束缚</p>
+									<p class="price"><span>5799</span>元
+										<del>6299元</del>
+									</p>
+									
+								</div>
+							</a></li>
+					</ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+				</div>
+				<div class="swiper-controls"><span class="swiper-flashsale-prev" tabindex="0" role="button"
+						aria-label="Previous slide" aria-disabled="false"><i
+							class="iconfont-arrow-left-big"></i></span><span
+						class="swiper-flashsale-next swiper-button-disabled" tabindex="0" role="button"
+						aria-label="Next slide" aria-disabled="true"><i class="iconfont-arrow-right-big"></i></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 侧边栏-->
+	<ul class="page-slider">
+		<li calss="APP">
+			<a href="">
+				<img src="img/phoneAPP.png" class="imgf">
+				<img src="img/phoneAPP2.png" class="imgf imgs">
+				<span>手机APP</span>
+			</a>
+			<div class="rightpop">
+				<img src="img/download.png">
+				<p>扫码领取新人百元礼包</p>
+			</div>
+		</li>
+		<li>
+			<a href="">
+				<img src="img/user1.png" class="imgf">
+				<img src="img/user2.png" class="imgf imgs">
+				<span>个人中心</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="img/user1.png" class="imgf">
+				<img src="img/user2.png" class="imgf imgs">
+				<span>售后服务</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="img/server1.png" class="imgf">
+				<img src="img/server2.png" class="imgf imgs">
+				<span>联系客服</span>
+			</a>
+		</li>
+		<li>
+			<a href="./cart.html">
+				<img src="img/car1.png" class="imgf">
+				<img src="img/car2.png" class="imgf imgs">
+				<span>购物车</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="img/server1.png" class="imgf">
+				<img src="img/server2.png" class="imgf imgs">
+				<span>返回顶部</span>
+			</a>
+		</li>
+	</ul>
+	<div class="container">
+		<div class="content" id="content">
+			
+		</div>
+	</div>
+
+
+</body>
+
+
+</html>
